@@ -4,11 +4,16 @@
 /dist
 /tmp
 /out-tsc
+/app/**/*.js
+/app/**/*.js.map
+
+
 # Only exists if Bazel was run
 /bazel-out
 
 # dependencies
 /node_modules
+/bower_components
 
 # profiling files
 chrome-profiler-events.json
@@ -31,6 +36,10 @@ speed-measure-plugin.json
 !.vscode/extensions.json
 .history/*
 
+# IDEs and editors
+/.idea
+
+
 # misc
 /.sass-cache
 /connect.lock
@@ -40,6 +49,11 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+
+
+# e2e
+/e2e/*.js
+/e2e/*.map
 
 # System Files
 .DS_Store
